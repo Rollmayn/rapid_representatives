@@ -1,3 +1,7 @@
+#Basic gitignore to ignore directories/files from the github rep
+#Dont touch these
+#if u do ill find you
+
 # Miscellaneous
 *.class
 *.log

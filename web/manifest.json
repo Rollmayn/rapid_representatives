@@ -1,6 +1,6 @@
 {
     "name": "rapid_representatives",
-    "short_name": "rapid_representatives",
+    "short_name": "rapid_reps",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
