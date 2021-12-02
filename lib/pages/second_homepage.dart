@@ -40,7 +40,7 @@ class SecondHomepage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 216, left: 24),
                   child: Text(
-                    '12.309 available',
+                    '57 cases available',
                     style: jobATextStyle,
                   ),
                 ),
@@ -52,7 +52,7 @@ class SecondHomepage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Big Companies',
+                    'All Jobs Near Camden',
                     style: jobTextStyle,
                   ),
                   Column(
@@ -60,64 +60,48 @@ class SecondHomepage extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 16),
                         child: JobList(
-                          company: 'Google',
-                          job: 'Front-End Developer',
+                          company: '£55-£65',
+                          job: 'Theft',
                           imageUrl: 'assets/google-icon.png',
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 16),
                         child: JobList(
-                          company: 'Instagram',
-                          job: 'UI Designer',
+                          company: '£43-£55',
+                          job: 'Assault',
                           imageUrl: 'assets/instagram-icon.png',
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 16),
                         child: JobList(
-                          company: 'Facebook',
-                          job: 'Data Scientist',
+                          company: '£60-£75',
+                          job: 'Robbery',
                           imageUrl: 'assets/facebook-icon.png',
                         ),
                       ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 30, left: 24, right: 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'New Startups',
-                    style: jobTextStyle,
-                  ),
-                  Column(
-                    children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 16),
                         child: JobList(
-                          company: 'Google',
-                          job: 'Front-End Developer',
+                          company: '£55-£65',
+                          job: 'Theft',
                           imageUrl: 'assets/google-icon.png',
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 16),
                         child: JobList(
-                          company: 'Instagram',
-                          job: 'UI Designer',
+                          job: 'Assault',
+                          company: '£25-£45',
                           imageUrl: 'assets/instagram-icon.png',
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 16),
                         child: JobList(
-                          company: 'Facebook',
-                          job: 'Data Scientist',
+                          company: '£45-£50',
+                          job: 'Assault',
                           imageUrl: 'assets/facebook-icon.png',
                         ),
                       ),

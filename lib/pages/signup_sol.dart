@@ -45,7 +45,7 @@ class _SignupPageState extends State<SignupPageSol> {
           child: Column(
             children: [
               Image.asset(
-                'assets/show_image.png',
+                'assets/user_pic.png',
                 height: 120,
                 width: 120,
               ),
@@ -59,7 +59,7 @@ class _SignupPageState extends State<SignupPageSol> {
       appBar: AppBar(
         elevation: 0,
         brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.orangeAccent,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);

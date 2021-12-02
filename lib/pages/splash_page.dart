@@ -31,12 +31,9 @@ class _SplashPageState extends State<SplashPage> {
             Container(
               child: Image.asset(
                 'assets/logo.png',
-                height: 304,
-                width: 236,
+                height: 608,
+                width: 472,
               ),
-            ),
-            SizedBox(
-              height: 20,
             ),
             Text(
               'RAPIDREPS',

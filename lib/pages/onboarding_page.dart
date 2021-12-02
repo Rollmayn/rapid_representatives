@@ -24,12 +24,12 @@ class OnboardingPage extends StatelessWidget {
                   'Find Your Next \nCase, \nThe Modern Way',
                   style: GoogleFonts.poppins(
                     fontSize: 32,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
                     color: Colors.black,
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: -0,
                 ),
                 Text(
                   'What is in you area?',
