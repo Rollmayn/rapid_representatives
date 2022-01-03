@@ -71,14 +71,14 @@ class _SignupPageState extends State<SignupPageRep> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
+      body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(top: 0, left: 24, right: 24),
+          padding: const EdgeInsets.only(top: 15, left: 24, right: 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Representative sign Up',
+                'Representative Sign Up',
                 style: titleTextStyle,
               ),
               Text(
@@ -86,11 +86,11 @@ class _SignupPageState extends State<SignupPageRep> {
                 style: subtitleTextStyle,
               ),
               SizedBox(
-                height: 15,
+                height: 5,
               ),
               isUploaded ? showedImages() : uploadedImages(),
               SizedBox(
-                height: 15,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,7 +100,7 @@ class _SignupPageState extends State<SignupPageRep> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     decoration: InputDecoration(
@@ -119,7 +119,7 @@ class _SignupPageState extends State<SignupPageRep> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,7 +129,7 @@ class _SignupPageState extends State<SignupPageRep> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     decoration: InputDecoration(
@@ -148,7 +148,7 @@ class _SignupPageState extends State<SignupPageRep> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,7 +158,7 @@ class _SignupPageState extends State<SignupPageRep> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     obscureText: true,
@@ -178,7 +178,7 @@ class _SignupPageState extends State<SignupPageRep> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -188,7 +188,7 @@ class _SignupPageState extends State<SignupPageRep> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     decoration: InputDecoration(
@@ -207,10 +207,10 @@ class _SignupPageState extends State<SignupPageRep> {
                 ],
               ),
               SizedBox(
-                height: 50,
+                height: 5,
               ),
               Container(
-                width: 450,
+                width: 350,
                 height: 50,
                 child: TextButton(
                   style: TextButton.styleFrom(
@@ -224,11 +224,9 @@ class _SignupPageState extends State<SignupPageRep> {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 20,
-                  bottom: 70,
-                ),
+              Container(
+                width: 350,
+                height: 50,
                 child: Center(
                   child: TextButton(
                     onPressed: () {

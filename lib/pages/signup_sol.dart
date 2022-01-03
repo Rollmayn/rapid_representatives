@@ -71,14 +71,23 @@ class _SignupPageState extends State<SignupPageSol> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 0, left: 24, right: 24),
+      body: Center(
+        child: Container(
+          decoration: BoxDecoration(
+              // image: DecorationImage(
+              //   image: AssetImage('assets/bg.jpg'),
+              //   fit: BoxFit.cover,
+              // ),
+              ),
+          padding: const EdgeInsets.only(top: 15, left: 24, right: 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 5,
+              ),
               Text(
-                'Solicitor sign Up',
+                'Solicitor Sign Up',
                 style: titleTextStyle,
               ),
               Text(
@@ -86,11 +95,11 @@ class _SignupPageState extends State<SignupPageSol> {
                 style: subtitleTextStyle,
               ),
               SizedBox(
-                height: 15,
+                height: 5,
               ),
               isUploaded ? showedImages() : uploadedImages(),
               SizedBox(
-                height: 15,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,7 +109,7 @@ class _SignupPageState extends State<SignupPageSol> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     decoration: InputDecoration(
@@ -119,7 +128,7 @@ class _SignupPageState extends State<SignupPageSol> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,7 +138,7 @@ class _SignupPageState extends State<SignupPageSol> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     decoration: InputDecoration(
@@ -148,7 +157,7 @@ class _SignupPageState extends State<SignupPageSol> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,7 +167,7 @@ class _SignupPageState extends State<SignupPageSol> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     obscureText: true,
@@ -178,7 +187,7 @@ class _SignupPageState extends State<SignupPageSol> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -188,7 +197,7 @@ class _SignupPageState extends State<SignupPageSol> {
                     style: titleTextStyle,
                   ),
                   SizedBox(
-                    height: 8,
+                    height: 5,
                   ),
                   TextFormField(
                     decoration: InputDecoration(
@@ -207,10 +216,10 @@ class _SignupPageState extends State<SignupPageSol> {
                 ],
               ),
               SizedBox(
-                height: 50,
+                height: 5,
               ),
               Container(
-                width: 450,
+                width: 350,
                 height: 50,
                 child: TextButton(
                   style: TextButton.styleFrom(
@@ -224,11 +233,9 @@ class _SignupPageState extends State<SignupPageSol> {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 20,
-                  bottom: 70,
-                ),
+              Container(
+                width: 350,
+                height: 50,
                 child: Center(
                   child: TextButton(
                     onPressed: () {

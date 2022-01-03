@@ -29,7 +29,7 @@ class OnboardingPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: -0,
+                  height: 0,
                 ),
                 Text(
                   'What is in you area?',
@@ -37,7 +37,7 @@ class OnboardingPage extends StatelessWidget {
                 ),
                 Center(
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 400),
+                    padding: const EdgeInsets.only(top: 250),
                     child: Container(
                       width: 200,
                       height: 45,

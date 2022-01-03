@@ -40,7 +40,7 @@ class _SigninPageState extends State<SigninPage> {
               //   fit: BoxFit.cover,
               // ),
               ),
-          padding: const EdgeInsets.only(top: 30, left: 24, right: 24),
+          padding: const EdgeInsets.only(top: 15, left: 24, right: 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
