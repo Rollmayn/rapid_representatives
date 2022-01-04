@@ -58,7 +58,6 @@ class _SignupPageState extends State<SignupPageSol> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        brightness: Brightness.light,
         backgroundColor: Colors.orangeAccent,
         leading: IconButton(
           onPressed: () {
@@ -216,7 +215,7 @@ class _SignupPageState extends State<SignupPageSol> {
                 ],
               ),
               SizedBox(
-                height: 5,
+                height: 8,
               ),
               Container(
                 width: 350,

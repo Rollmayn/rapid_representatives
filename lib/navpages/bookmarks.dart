@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:rapid_reps/navpages/bookmarks.dart';
+import 'package:rapid_reps/navpages/bookmarkheader.dart';
 import 'package:rapid_reps/navpages/navdraw/navdrawer.dart';
-import 'package:rapid_reps/navpages/notifications.dart';
-import 'package:rapid_reps/navpages/profile.dart';
+import 'package:rapid_reps/navpages/notifheader.dart';
 import 'package:rapid_reps/theme.dart';
 import 'package:rapid_reps/widgets/body_home.dart';
-import 'package:rapid_reps/widgets/header_home.dart';
+import 'package:rapid_reps/navpages/notifheader.dart';
+import 'package:rapid_reps/navpages/notifications.dart';
+import 'package:rapid_reps/navpages/profile.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePage extends StatelessWidget {
+class bookmarks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,11 +74,10 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            headerHome(),
+            bookHeader(),
             SizedBox(
               height: 16,
             ),
-            bodyHome(),
           ],
         ),
       ),

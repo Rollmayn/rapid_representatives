@@ -1,8 +1,12 @@
 import 'package:email_validator/email_validator.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:rapid_reps/main.dart';
+import 'package:rapid_reps/navpages/profile.dart';
 import 'package:rapid_reps/pages/home_page.dart';
 import 'package:rapid_reps/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:rapid_reps/pages/sol_home.dart';
 
 class SigninPage extends StatefulWidget {
   @override
@@ -10,8 +14,8 @@ class SigninPage extends StatefulWidget {
 }
 
 class _SigninPageState extends State<SigninPage> {
+  String _email, _password;
   bool isEmailValid = true;
-
   TextEditingController emailController = TextEditingController(text: '');
 
   @override
@@ -72,6 +76,7 @@ class _SigninPageState extends State<SigninPage> {
               SizedBox(
                 height: 40,
               ),
+              //email section
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -95,6 +100,7 @@ class _SigninPageState extends State<SigninPage> {
                       if (isValid) {
                         setState(() {
                           isEmailValid = true;
+                          _email = value.trim();
                         });
                       } else {
                         setState(() {
@@ -123,6 +129,7 @@ class _SigninPageState extends State<SigninPage> {
               SizedBox(
                 height: 20,
               ),
+              //password section
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -151,32 +158,61 @@ class _SigninPageState extends State<SigninPage> {
                         borderSide: BorderSide(color: Colors.purple),
                       ),
                     ),
+                    onChanged: (value) {
+                      setState(() {
+                        _password = value.trim();
+                      });
+                    },
                   ),
                 ],
               ),
               SizedBox(
                 height: 40,
               ),
-              Container(
-                width: 450,
-                height: 50,
-                child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.black,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(66))),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomePage()));
-                    },
-                    child: Text(
-                      'Login',
-                      style: buttonTextStyle,
-                    )),
-              ),
+              //login button
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  //width: 450,
+                  //height: 50,
+                  children: <Widget>[
+                    ElevatedButton(
+                        style: TextButton.styleFrom(
+                            elevation: 10,
+                            backgroundColor: Colors.black,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(32)),
+                            minimumSize: Size(0, 40)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomePage()));
+                        },
+                        child: Text(
+                          'Representative Login',
+                          style: buttonTextStyle,
+                        )),
+                    ElevatedButton(
+                        style: TextButton.styleFrom(
+                            elevation: 10,
+                            backgroundColor: Colors.black,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(66)),
+                            minimumSize: Size(180, 40)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SolHomePage()));
+                        },
+                        child: Text(
+                          'Solicitor Login',
+                          style: buttonTextStyle,
+                        )),
+                  ]),
+
               Padding(
                 padding: const EdgeInsets.only(
-                  top: 20,
+                  top: 5,
                 ),
                 child: Center(
                   child: TextButton(
@@ -187,7 +223,7 @@ class _SigninPageState extends State<SigninPage> {
                       'Create New Account',
                       style: GoogleFonts.poppins(
                           fontSize: 14,
-                          color: Color(0xffb3b5c4),
+                          color: Colors.black,
                           fontWeight: FontWeight.w300),
                     ),
                   ),

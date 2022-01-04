@@ -1,4 +1,4 @@
-package com.skarer.futurejob.future_job
+package com.stefan.rapidreps.rapid_reps
 
 import io.flutter.embedding.android.FlutterActivity
 

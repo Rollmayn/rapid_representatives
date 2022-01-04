@@ -6,7 +6,10 @@ import 'package:rapid_reps/pages/signup_sol.dart';
 import 'package:rapid_reps/pages/splash_page.dart';
 import 'package:rapid_reps/pages/reporsol.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
