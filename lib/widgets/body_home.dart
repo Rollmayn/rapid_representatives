@@ -78,76 +78,76 @@ Widget bodyHome() {
               fontWeight: FontWeight.w400,
             ),
           ),
-          Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 16,
-                  right: 24,
-                ),
-                child: JobList(
-                  company: 'Sunders Law',
-                  job: 'Paddington Station, 12-18 Manor Pl',
-                  imageUrl: 'assets/theft.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 16,
-                  right: 24,
-                ),
-                child: JobList(
-                  company: 'Sunders Law',
-                  job: 'Brixton Station, 12-18 Manor Pl',
-                  imageUrl: 'assets/theft.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 16,
-                  right: 24,
-                ),
-                child: JobList(
-                  company: 'Sunders Law',
-                  job: 'Greenwich Station, 12-18 Manor Pl',
-                  imageUrl: 'assets/theft.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 16,
-                  right: 24,
-                ),
-                child: JobList(
-                  company: 'Sunders Law',
-                  job: 'Mamba Station, 12-18 Manor Pl',
-                  imageUrl: 'assets/theft.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 16,
-                  right: 24,
-                ),
-                child: JobList(
-                  company: 'Sunders Law',
-                  job: 'Gas Station, 12-18 Manor Pl',
-                  imageUrl: 'assets/theft.png',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  top: 16,
-                  right: 24,
-                ),
-                child: JobList(
-                  company: 'Sunders Law',
-                  job: 'Stratford Station, 12-18 Manor Pl',
-                  imageUrl: 'assets/theft.png',
-                ),
-              ),
-            ],
-          )
+          // Column(
+          //   children: [
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         top: 16,
+          //         right: 24,
+          //       ),
+          //       child: JobList(
+          //         company: 'Sunders Law',
+          //         job: 'Paddington Station, 12-18 Manor Pl',
+          //         imageUrl: 'assets/theft.png',
+          //       ),
+          //     ),
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         top: 16,
+          //         right: 24,
+          //       ),
+          //       child: JobList(
+          //         company: 'Sunders Law',
+          //         job: 'Brixton Station, 12-18 Manor Pl',
+          //         imageUrl: 'assets/theft.png',
+          //       ),
+          //     ),
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         top: 16,
+          //         right: 24,
+          //       ),
+          //       child: JobList(
+          //         company: 'Sunders Law',
+          //         job: 'Greenwich Station, 12-18 Manor Pl',
+          //         imageUrl: 'assets/theft.png',
+          //       ),
+          //     ),
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         top: 16,
+          //         right: 24,
+          //       ),
+          //       child: JobList(
+          //         company: 'Sunders Law',
+          //         job: 'Mamba Station, 12-18 Manor Pl',
+          //         imageUrl: 'assets/theft.png',
+          //       ),
+          //     ),
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         top: 16,
+          //         right: 24,
+          //       ),
+          //       child: JobList(
+          //         company: 'Sunders Law',
+          //         job: 'Gas Station, 12-18 Manor Pl',
+          //         imageUrl: 'assets/theft.png',
+          //       ),
+          //     ),
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         top: 16,
+          //         right: 24,
+          //       ),
+          //       child: JobList(
+          //         company: 'Sunders Law',
+          //         job: 'Stratford Station, 12-18 Manor Pl',
+          //         imageUrl: 'assets/theft.png',
+          //       ),
+          //     ),
+          //   ],
+          // )
         ],
       ),
     ),

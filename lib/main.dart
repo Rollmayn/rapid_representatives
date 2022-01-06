@@ -5,6 +5,7 @@ import 'package:rapid_reps/pages/signup_rep.dart';
 import 'package:rapid_reps/pages/signup_sol.dart';
 import 'package:rapid_reps/pages/splash_page.dart';
 import 'package:rapid_reps/pages/reporsol.dart';
+import 'package:rapid_reps/pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/sign-in': (context) => SigninPage(),
         '/signuprep': (context) => SignupPageRep(),
         '/signupsol': (context) => SignupPageSol(),
-        // '/home': (context) => HomePage(),
+        '/home': (context) => JobDisplay(),
         '/secondhome': (context) => SecondHomepage(),
         '/repsorsols': (context) => RepsOrSolicitors(),
       },

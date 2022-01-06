@@ -185,7 +185,7 @@ class _SigninPageState extends State<SigninPage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomePage()));
+                                  builder: (context) => JobDisplay()));
                         },
                         child: Text(
                           'Representative Login',
