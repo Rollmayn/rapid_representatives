@@ -110,7 +110,7 @@ class _JobsState extends State<JobDisplay> {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               child: Text(
-                "Nearby Jobs",
+                "All Jobs",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

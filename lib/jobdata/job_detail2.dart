@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_reps/jobdata/jobdata.dart';
+import 'package:rapid_reps/navpages/map.dart';
+import 'package:rapid_reps/theme.dart';
 
 class JobDetail extends StatelessWidget {
-  final Job job;
-  final Job2 job2;
   final Job3 job3;
 
-  JobDetail({this.job, this.job2, this.job3});
+  JobDetail({@required this.job3});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class JobDetail extends StatelessWidget {
               ),
               Center(
                 child: Text(
-                  job.position,
+                  job3.position,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -63,7 +63,7 @@ class JobDetail extends StatelessWidget {
               ),
               Center(
                 child: Text(
-                  job.city,
+                  job3.city,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -87,7 +87,7 @@ class JobDetail extends StatelessWidget {
                       ),
                       child: Center(
                         child: Text(
-                          job.concept,
+                          job3.concept,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
@@ -100,7 +100,7 @@ class JobDetail extends StatelessWidget {
                     child: Container(
                       child: Center(
                         child: Text(
-                          r"$" + job.price + "/h",
+                          r"$" + job3.price + "/h",
                           style: TextStyle(
                             fontSize: 22,
                           ),
@@ -136,16 +136,6 @@ class JobDetail extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Container(
-                    height: 30,
-                    width: 30,
-                    child: Center(
-                      child: Icon(
-                        Icons.favorite_border,
-                        size: 30,
-                      ),
-                    ),
-                  ),
                   SizedBox(
                     width: 8,
                   ),
@@ -159,14 +149,20 @@ class JobDetail extends StatelessWidget {
                         ),
                       ),
                       child: Center(
-                        child: Text(
-                          "Apply Now",
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
+                        child: ElevatedButton(
+                            style: TextButton.styleFrom(
+                                elevation: 10,
+                                backgroundColor: Colors.black,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(32)),
+                                minimumSize: Size(0, 40)),
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/map');
+                            },
+                            child: Text(
+                              'Take me there!',
+                              style: buttonTextStyle,
+                            )),
                       ),
                     ),
                   ),
@@ -181,8 +177,8 @@ class JobDetail extends StatelessWidget {
 
   List<Widget> buildRequirements() {
     List<Widget> list = [];
-    for (var i = 0; i < getJobsRequirements().length; i++) {
-      list.add(buildRequirement(getJobsRequirements()[i]));
+    for (var i = 0; i < getAccRequirements().length; i++) {
+      list.add(buildRequirement(getAccRequirements()[i]));
     }
     return list;
   }

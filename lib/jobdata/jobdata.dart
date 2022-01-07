@@ -58,12 +58,22 @@ class Job2 {
   Job2(this.position, this.company, this.price, this.concept, this.city);
 }
 
+class Job3 {
+  String position;
+  String company;
+  String price;
+  String concept;
+  String city;
+
+  Job3(this.position, this.company, this.price, this.concept, this.city);
+}
+
 List<Job> getJobs() {
   return <Job>[
     Job("Walworth Station", "12-28 Manor Pl, SE17 3BB", "40", "6m", "London"),
     Job("Bishopsgate Station", "182 Bishopsgate, EC2M 4NP", "60", "3.4m",
         "London"),
-    Job("Snow Hill Station", "5 Snow Hill, EC1A 2DP", "55", "4m", "London"),
+    Job("Snow Hill Station", "5 Snow Hill, EC1A 2DP", "55", "3.5m", "London"),
     Job("Wood Street Station", "37 Wood St, EC2P 2NQ", "80", "5.1m", "London"),
     Job("City of London Station", "37 Wood St, EC2P 2NQ", "60", "3m", "London"),
   ];
@@ -83,6 +93,13 @@ List<Job2> getMoreJobs() {
   ];
 }
 
+List<Job3> getJobs3() {
+  return <Job3>[
+    Job3("Walworth Station", "12-28 Manor Pl, SE17 3BB", "40", "6m", "London"),
+    Job3("Snow Hill Station", "5 Snow Hill, EC1A 2DP", "55", "3.5m", "London"),
+  ];
+}
+
 List<String> getJobsRequirements() {
   return <String>[
     "Contact  \n07******3913\n",
@@ -91,5 +108,17 @@ List<String> getJobsRequirements() {
     "DSCC Number: 0345 543 8910",
     "Listed by: \nSaunders Law \n07*****4511",
     "Contact via email at saunders@law.co.uk",
+  ];
+}
+
+List<String> getAccRequirements() {
+  return <String>[
+    "Contact  \n075356613913\n",
+    "Client Name: John Omokore",
+    "Date: 17/11/2021 @ 18:30",
+    "DSCC Number: 0345 543 8910",
+    "Listed by: \nSaunders Law \n07475244511",
+    "Contact via email at saunders@law.co.uk",
+    "Case: \n\nJanuary 1st, 2021 \nMiss Emilia Roberts was seen and reported partaking in disorderly conduct involving two parties arguing and fist-fighting in a bar on Old Goat Avenue",
   ];
 }

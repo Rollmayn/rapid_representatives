@@ -25,8 +25,8 @@ class _SignupPageState extends State<SignupPageSol> {
             children: [
               Image.asset(
                 'assets/profileplaceholder.png',
-                height: 150,
-                width: 150,
+                height: 130,
+                width: 130,
               ),
             ],
           ),
@@ -46,8 +46,8 @@ class _SignupPageState extends State<SignupPageSol> {
             children: [
               Image.asset(
                 'assets/user_pic.png',
-                height: 120,
-                width: 120,
+                height: 100,
+                width: 100,
               ),
             ],
           ),
@@ -56,6 +56,7 @@ class _SignupPageState extends State<SignupPageSol> {
     }
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.orangeAccent,

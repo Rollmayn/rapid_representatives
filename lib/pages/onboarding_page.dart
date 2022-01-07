@@ -47,7 +47,7 @@ class OnboardingPage extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(66))),
                           onPressed: () {
-                            Navigator.pushNamed(context, '/repsorsols');
+                            Navigator.pushNamed(context, '/privacy');
                           },
                           child: Text(
                             'Get Started',

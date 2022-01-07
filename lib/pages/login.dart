@@ -1,5 +1,5 @@
 import 'package:email_validator/email_validator.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:rapid_reps/main.dart';
 import 'package:rapid_reps/navpages/profile.dart';
@@ -197,7 +197,7 @@ class _SigninPageState extends State<SigninPage> {
                             backgroundColor: Colors.black,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(66)),
-                            minimumSize: Size(180, 40)),
+                            minimumSize: Size(160, 40)),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -217,7 +217,7 @@ class _SigninPageState extends State<SigninPage> {
                 child: Center(
                   child: TextButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/repsorsols');
+                      Navigator.pushNamed(context, '/privacy');
                     },
                     child: Text(
                       'Create New Account',
