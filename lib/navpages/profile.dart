@@ -149,6 +149,7 @@ class _SignupPageState extends State<profile> {
                   )
                 ],
               ),
+              //profile main body starts
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(bottom: 0, top: 25),
@@ -164,62 +165,9 @@ class _SignupPageState extends State<profile> {
               SizedBox(
                 height: 5,
               ),
-              // Column(
-              //   crossAxisAlignment: CrossAxisAlignment.start,
-              //   children: [
-              //     Text(
-              //       'Password',
-              //       style: titleTextStyle,
-              //     ),
-              //     SizedBox(
-              //       height: 5,
-              //     ),
-              //     TextFormField(
-              //       obscureText: true,
-              //       decoration: InputDecoration(
-              //         fillColor: Color(0xfff1f0f5),
-              //         filled: true,
-              //         enabledBorder: OutlineInputBorder(
-              //           borderRadius: BorderRadius.circular(100),
-              //           borderSide: BorderSide.none,
-              //         ),
-              //         focusedBorder: OutlineInputBorder(
-              //           borderRadius: BorderRadius.circular(100),
-              //           borderSide: BorderSide.none,
-              //         ),
-              //       ),
-              //     )
-              //   ],
-              // ),
               SizedBox(
                 height: 5,
               ),
-              // Column(
-              //   crossAxisAlignment: CrossAxisAlignment.start,
-              //   children: [
-              //     Text(
-              //       'Confirm Password',
-              //       style: titleTextStyle,
-              //     ),
-              //     SizedBox(
-              //       height: 5,
-              //     ),
-              //     TextFormField(
-              //       decoration: InputDecoration(
-              //         fillColor: Color(0xfff1f0f5),
-              //         filled: true,
-              //         enabledBorder: OutlineInputBorder(
-              //           borderRadius: BorderRadius.circular(100),
-              //           borderSide: BorderSide.none,
-              //         ),
-              //         focusedBorder: OutlineInputBorder(
-              //           borderRadius: BorderRadius.circular(100),
-              //           borderSide: BorderSide.none,
-              //         ),
-              //       ),
-              //     )
-              //   ],
-              // ),
               SizedBox(
                 height: 5,
               ),
@@ -227,21 +175,37 @@ class _SignupPageState extends State<profile> {
                 'About you',
                 style: titleTextStyle,
               ),
-              TextField(
+              TextFormField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
+                decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText:
+                        'Hi, I am a student and I love to watch crime \nmovies. I think I would make a great \nrepresentative!'),
               ),
               SizedBox(
-                height: 45,
+                height: 30,
               ),
               Text(
                 'Skills and Experiences',
                 style: titleTextStyle,
               ),
-              TextField(
+              Text(
+                '3 years experience',
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.blueGrey,
+                ),
+              ),
+              TextFormField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
+                decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText: '- Git \n- Adobe \n- Flutter \n- Frontend'),
               ),
+              //ends here
               Container(
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 0, vertical: 25),

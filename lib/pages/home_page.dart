@@ -31,7 +31,7 @@ class _JobsState extends State<JobDisplay> {
           items: [
             BottomNavigationBarItem(
               icon: IconButton(
-                icon: Image.asset('assets/navbar_one.png'),
+                icon: Image.asset('assets/menu2.png'),
                 iconSize: 0,
                 onPressed: () {
                   Navigator.push(context,

@@ -74,17 +74,21 @@ class _SignupPageState extends State<SignupPageRepCon> {
               TextField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
+                decoration:
+                    new InputDecoration(hintText: 'Tell us about yourself!'),
               ),
               SizedBox(
-                height: 100,
+                height: 50,
               ),
               Text(
                 'Skills and Experiences',
                 style: titleTextStyle,
               ),
-              TextField(
+              TextFormField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
+                decoration: new InputDecoration(
+                    hintText: 'Separate each skill by comma'),
               ),
               SizedBox(
                 height: 75,

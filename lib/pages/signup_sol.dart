@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:rapid_reps/pages/sol_home.dart';
 
 import '../theme.dart';
 
@@ -226,7 +227,10 @@ class _SignupPageState extends State<SignupPageSol> {
                       backgroundColor: Colors.black,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(66))),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SolHomePage()));
+                  },
                   child: Text(
                     'Sign Up',
                     style: buttonTextStyle,

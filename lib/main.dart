@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_reps/navpages/map.dart';
-import 'package:rapid_reps/pages/second_homepage.dart';
 import 'package:rapid_reps/pages/login.dart';
 import 'package:rapid_reps/pages/signup_rep.dart';
 import 'package:rapid_reps/pages/signup_sol.dart';
@@ -28,7 +27,6 @@ class MyApp extends StatelessWidget {
         '/signuprep': (context) => SignupPageRep(),
         '/signupsol': (context) => SignupPageSol(),
         '/home': (context) => JobDisplay(),
-        '/secondhome': (context) => SecondHomepage(),
         '/repsorsols': (context) => RepsOrSolicitors(),
         '/privacy': (context) => privacypolicy(),
         '/map': (context) => GoogleMapScreen(),

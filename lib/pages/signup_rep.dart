@@ -192,6 +192,7 @@ class _SignupPageState extends State<SignupPageRep> {
                     height: 5,
                   ),
                   TextFormField(
+                    obscureText: true,
                     decoration: InputDecoration(
                       fillColor: Color(0xfff1f0f5),
                       filled: true,
